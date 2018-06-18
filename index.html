@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>做我女朋友好不好</title>
+    <style>
+        button{
+            width:100px;
+            height:100px;
+        }
+        #main{
+            float: left;
+        }
+        #img{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="main">
+        <h4>小姐姐，我观察你好久了</h4>
+        <h1>做我女朋友好不好?</h1>
+        <button id="yes">好</button><button id="no">不好</button>
+    </div>
+    <div id="img">
+        <img src="http://www.gaoxiaogif.com/d/file/201706/4cea2cf1b38996cfbf35365b775aee51.gif">
+    </div>
+</div>
+
+
+<script>
+    var number=0;
+    document.getElementById('no').addEventListener('click',function () {
+    if(number==0){
+        alert('房子写你名');
+        number++;
+        return;
+    }
+    if(number==1){
+        alert('保大');
+        number++;
+        return;
+    }
+    if(number==2){
+        alert('我妈会游泳');
+        number=0;
+        return;
+    }
+},false);
+document.getElementById('yes').addEventListener('click',function () {
+    alert('一号目标已拿下');
+},false);
+</script>
+</body>
+</html>
